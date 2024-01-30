@@ -29,3 +29,4 @@ coverage
 
 .env
 build.sh
+node_modules
