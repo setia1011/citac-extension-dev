@@ -250,7 +250,7 @@ export default {
          isLoading: false,
          fullPage: false,
          loader: 'spinner',
-         start_date: new Date(new Date().getMonth().toString()+'/01/'+new Date().getFullYear().toString()),
+         start_date: new Date((new Date().getMonth() + 1).toString()+'/01/'+new Date().getFullYear().toString()),
          // start_date: new Date(new Date().getMonth().toString()+'/01/2022'),
          end_date: new Date(),
          initOptions: {
