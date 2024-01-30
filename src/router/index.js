@@ -76,6 +76,18 @@ const routes = [
         name: 'Docuser',
         meta: { layout: First, 'name': 'Documentation for User' },
         component: () => import('../views/DocUserView.vue')
+    },
+    {
+        path: '/intel-doc',
+        name: 'Dokumen Intelijen',
+        meta: { layout: First, 'name': 'Dokumen Intelijen' },
+        component: () => import('../views/IntelDocView.vue')
+    },
+    {
+        path: '/intel-doc-summary',
+        name: 'Rangkuman Dokumen Intelijen',
+        meta: { layout: First, 'name': 'Rangkuman Dokumen Intelijen' },
+        component: () => import('../views/IntelDocSummaryView.vue')
     }
 ];
 

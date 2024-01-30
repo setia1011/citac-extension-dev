@@ -26,6 +26,25 @@
     },
     "2": {
         "show": true,
+        "label": "Intel",
+        "to": "/intel",
+        "children": {
+            "0": {
+                "show": true,
+                "label": "Dokumen Intelijen",
+                "to": "/intel-doc",
+                "children": {}
+            },
+            "1": {
+                "show": true,
+                "label": "Rangkuman Dokumen Intelijen",
+                "to": "/intel-doc-summary",
+                "children": {}
+            }
+        }
+    },
+    "3": {
+        "show": true,
         "label": "IMA",
         "to": "/ima",
         "children": {
@@ -43,7 +62,7 @@
             }
         }
     },
-    "3": {
+    "4": {
         "show": true,
         "label": "Blokir",
         "to": "/blokir",
