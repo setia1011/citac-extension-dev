@@ -1,0 +1,52 @@
+{
+    "0": {
+        "show": true,
+        "label": "Home",
+        "to": "/",
+        "children": {}
+    },
+    "1": {
+        "show": true,
+        "label": "Komoditi",
+        "to": "/komoditi",
+        "children": {
+            "0": {
+                "show": true,
+                "label": "Impor",
+                "to": "/komoditi-impor",
+                "children": {}
+            },
+            "1": {
+                "show": true,
+                "label": "Ekspor - CPO",
+                "to": "/komoditi-ekspor-cpo",
+                "children": {}
+            }
+        }
+    },
+    "2": {
+        "show": true,
+        "label": "IMA",
+        "to": "/ima",
+        "children": {
+            "0": {
+                "show": true,
+                "label": "Crawler",
+                "to": "/ima-crawler",
+                "children": {}
+            },
+            "1": {
+                "show": true,
+                "label": "Article",
+                "to": "/ima-article",
+                "children": {}
+            }
+        }
+    },
+    "3": {
+        "show": true,
+        "label": "Blokir",
+        "to": "/blokir",
+        "children": {}
+    }
+}
