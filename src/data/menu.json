@@ -57,7 +57,13 @@
             "1": {
                 "show": true,
                 "label": "Article",
-                "to": "/ima-article",
+                "to": "/ima-article-v2",
+                "children": {}
+            },
+            "3": {
+                "show": true,
+                "label": "Article v3",
+                "to": "/ima-article-v3",
                 "children": {}
             }
         }

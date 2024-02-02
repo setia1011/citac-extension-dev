@@ -538,7 +538,7 @@ import bulmaCalendar from "bulma-extensions/bulma-calendar/dist/js/bulma-calenda
 import { ref } from "vue";
 
 export default {
-    name: 'Article',
+    name: 'ArticleV1',
     components: {
         Loading,
         Paginate,

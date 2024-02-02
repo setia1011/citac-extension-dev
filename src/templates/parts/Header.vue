@@ -24,7 +24,13 @@
                                     <div class="navbar-link">{{ item.label }}</div>
                                     <div class="navbar-dropdown">
                                         <template v-for="(i, x) in item.children" :key="x">
-                                            <router-link :to="i.to" class="navbar-item" v-on:click="smClicked($event)">{{ i.label }}</router-link>
+                                            <template v-if="i.to == '/ima-article-v3'">
+                                                <hr class="navbar-divider">
+                                                <router-link :to="i.to" target="_blank" class="navbar-item" v-on:click="smClicked($event)">{{ i.label }}</router-link>
+                                            </template>
+                                            <template v-else>
+                                                <router-link :to="i.to" class="navbar-item" v-on:click="smClicked($event)">{{ i.label }}</router-link>
+                                            </template>
                                         </template>
                                     </div>
                                 </div>

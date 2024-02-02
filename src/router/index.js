@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory, createWebHashHistory } from 'vue-router'
 import Login from "../templates/Login.vue";
 import First from "../templates/First.vue";
+import Fifth from "../templates/Fifth.vue";
 import { authStore } from '../stores/auth';
 
 const routes = [
@@ -41,16 +42,22 @@ const routes = [
         component: () => import('../views/ArticleCrawlerView.vue')
     },
     {
-        path: '/ima-article',
-        name: 'Article',
+        path: '/ima-article-v1',
+        name: 'ArticleV1',
+        meta: { layout: First, 'name': 'Article' },
+        component: () => import('../views/ArticleV1View.vue')
+    },
+    {
+        path: '/ima-article-v2',
+        name: 'ArticleV2',
         meta: { layout: First, 'name': 'Article' },
         component: () => import('../views/ArticleV2View.vue')
     },
     {
-        path: '/ima-article-v2',
-        name: 'Article v2',
-        meta: { layout: First, 'name': 'Article V2' },
-        component: () => import('../views/ArticleV2View.vue')
+        path: '/ima-article-v3',
+        name: 'ArticleV3',
+        meta: { layout: Fifth, 'name': 'Article' },
+        component: () => import('../views/ArticleV3View.vue')
     },
     {
         path: '/ima-analytic',

@@ -26,7 +26,7 @@
                               class="v-selectx v-tahun" 
                               v-model="s_tahun" 
                               placeholder="Tahun" 
-                              :options="['2023','2022','2021']"></v-select>
+                              :options="['2024','2023','2022','2021']"></v-select>
                      </div>
 
                      <div class="column pb-0 is-full">
@@ -839,8 +839,8 @@ export default {
          },
          from: new Date().getFullYear().toString() + '-01-01',
          to: new Date().getFullYear().toString() + '-12-31',
-         s_tahun: 2023,
-         s_tahun_options: ['2021','2022','2023'],
+         s_tahun: new Date().getFullYear().toString(),
+         s_tahun_options: ['2024', '2021','2022','2023'],
          s_kantor: null,
          s_kantor_options: [],
          s_kantorx: [
