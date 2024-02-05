@@ -141,7 +141,7 @@
      </div> -->
  
       <div class="columns is-multiline is-variable is-1-mobile is-1-tablet is-1-desktop is-1-widescreen is-1-fullhd mt-0">
-         <div class="column is-full-mobile is-full-tablet is-half-desktop is-half-widescreen pb-1 pt-1">
+         <div class="column is-full-mobile is-full-tablet is-half-desktop is-one-third-widescreen pb-1 pt-1">
          <div>
             <v-chart
             :key="chart_pie_jenis_dokumen.series"
@@ -151,7 +151,7 @@
             autoresize/>
          </div>
          </div>
-         <div class="column is-full-mobile is-full-tablet is-half-desktop is-half-widescreen pb-1 pt-1">
+         <div class="column is-full-mobile is-full-tablet is-half-desktop is-one-third-widescreen pb-1 pt-1">
          <v-chart
             :key="chart_line_dokumen_per_bulan.series?.name"
             class="chart border" 
@@ -159,7 +159,7 @@
             :option="chart_line_dokumen_per_bulan"
             autoresize/>
          </div>
-         <div class="column is-full-mobile is-full-tablet is-half-desktop is-half-widescreen pb-1 pt-1">
+         <div class="column is-full-mobile is-full-tablet is-half-desktop is-one-third-widescreen pb-1 pt-1">
             <v-chart
             :key="chart_bar_hitrate.series?.name"
             class="chart border" 
@@ -167,13 +167,226 @@
             :option="chart_bar_hitrate"
             autoresize/>
          </div>
-         <div class="column is-full-mobile is-full-tablet is-half-desktop is-half-widescreen pb-1 pt-1">
+         <div class="column is-full-mobile is-full-tablet is-half-desktop is-one-third-widescreen pb-1 pt-1">
             <v-chart
             :key="chart_bar_jenis_dokumen_referensi.dataset?.source"
             class="chart border" 
             style="width: 100%; height: 400px;" 
             :option="chart_bar_jenis_dokumen_referensi"
             autoresize/>
+         </div>
+         <div class="column is-full-mobile is-full-tablet is-half-desktop is-one-third-widescreen pb-1 pt-1">
+            <v-chart
+            :key="chart_bar_jenis_dokumen_referensi.dataset?.source"
+            class="chart border" 
+            style="width: 100%; height: 400px;" 
+            :option="chart_bar_jenis_dokumen_referensi"
+            autoresize/>
+         </div>
+         <div class="column is-full-mobile is-full-tablet is-half-desktop is-one-third-widescreen pb-1 pt-1">
+            <v-chart
+            :key="chart_bar_jenis_dokumen_referensi.dataset?.source"
+            class="chart border" 
+            style="width: 100%; height: 400px;" 
+            :option="chart_bar_jenis_dokumen_referensi"
+            autoresize/>
+         </div>
+      </div>
+      <div class="is-divider p-0 m-0 mb-4" data-content="|"></div>
+
+      <!-- https://stackoverflow.com/questions/52795558/how-to-accomplish-a-masonry-layout-like-google-keep-with-bulma -->
+      <div class="card-columns columns-3-xl columns-3-lg columns-2-md columns-1-sm p-0">
+
+         <div class="card card-content is-radiusless is-shadowless p-0">
+            <div class="panel is-shadowless" style="border: 1px solid rgb(228, 222, 222);">
+               <p 
+                  class="panel-heading is-size-6 has-text-centered">10 Terbanyak Berdasarkan Analis<br />
+                  <span class="is-size-7 has-text-grey-dark">(Th-2024) 1</span>
+               </p>
+               <div class="panel-block">
+                  <table class="table is-striped is-narrow is-hoverable is-fullwidth">
+                     <thead>
+                        <tr>
+                           <th>No.</th>
+                           <th>Nama Analis</th>
+                           <th>Jumlah</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>1</td>
+                           <td>Proyekmu siap tampung traffic tinggi didukung fleksibilitas pilihan sistem operasi & isolasi resources 100%.</td>
+                           <td>8000</td>
+                        </tr>
+                        <tr>
+                           <td>2</td>
+                           <td>Proyekmu siap tampung traffic tinggi didukung fleksibilitas pilihan sistem operasi & isolasi resources 100%.</td>
+                           <td>8000</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+         </div>
+
+         <div class="card card-content is-radiusless is-shadowless p-0">
+            <div class="panel is-shadowless" style="border: 1px solid rgb(228, 222, 222);">
+               <p 
+                  class="panel-heading is-size-6 has-text-centered">10 Terbanyak Berdasarkan Analis<br />
+                  <span class="is-size-7 has-text-grey-dark">(Th-2024) 2</span>
+               </p>
+               <div class="panel-block">
+                  <table class="table is-striped is-narrow is-hoverable is-fullwidth">
+                     <thead>
+                        <tr>
+                           <th>No.</th>
+                           <th>Nama Analis</th>
+                           <th>Jumlah</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>1</td>
+                           <td>Proyekmu siap tampung traffic tinggi didukung fleksibilitas pilihan sistem operasi & isolasi resources 100%.</td>
+                           <td>8000</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+         </div>
+
+         <div class="card card-content is-radiusless is-shadowless p-0">
+            <div class="panel is-shadowless" style="border: 1px solid rgb(228, 222, 222);">
+               <p 
+                  class="panel-heading is-size-6 has-text-centered">10 Terbanyak Berdasarkan Analis<br />
+                  <span class="is-size-7 has-text-grey-dark">(Th-2024) 3</span>
+               </p>
+               <div class="panel-block">
+                  <table class="table is-striped is-narrow is-hoverable is-fullwidth">
+                     <thead>
+                        <tr>
+                           <th>No.</th>
+                           <th>Nama Analis</th>
+                           <th>Jumlah</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>1</td>
+                           <td>Proyekmu siap tampung traffic tinggi didukung fleksibilitas pilihan sistem operasi & isolasi resources 100%.</td>
+                           <td>8000</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+         </div>
+
+         <div class="card card-content is-radiusless is-shadowless p-0">
+            <div class="panel is-shadowless" style="border: 1px solid rgb(228, 222, 222);">
+               <p 
+                  class="panel-heading is-size-6 has-text-centered">10 Terbanyak Berdasarkan Analis<br />
+                  <span class="is-size-7 has-text-grey-dark">(Th-2024) 4</span>
+               </p>
+               <div class="panel-block">
+                  <table class="table is-striped is-narrow is-hoverable is-fullwidth">
+                     <thead>
+                        <tr>
+                           <th>No.</th>
+                           <th>Nama Analis</th>
+                           <th>Jumlah</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>1</td>
+                           <td>Proyekmu siap tampung traffic tinggi didukung fleksibilitas pilihan sistem operasi & isolasi resources 100%.</td>
+                           <td>8000</td>
+                        </tr>
+                        <tr>
+                           <td>2</td>
+                           <td>Proyekmu siap tampung traffic tinggi didukung fleksibilitas pilihan sistem operasi & isolasi resources 100%.</td>
+                           <td>8000</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+         </div>
+
+         <div class="card card-content is-radiusless is-shadowless p-0">
+            <div class="panel is-shadowless" style="border: 1px solid rgb(228, 222, 222);">
+               <p 
+                  class="panel-heading is-size-6 has-text-centered">10 Terbanyak Berdasarkan Analis<br />
+                  <span class="is-size-7 has-text-grey-dark">(Th-2024) 5</span>
+               </p>
+               <div class="panel-block">
+                  <table class="table is-striped is-narrow is-hoverable is-fullwidth">
+                     <thead>
+                        <tr>
+                           <th>No.</th>
+                           <th>Nama Analis</th>
+                           <th>Jumlah</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>1</td>
+                           <td>Proyekmu siap tampung traffic tinggi didukung fleksibilitas pilihan sistem operasi & isolasi resources 100%.</td>
+                           <td>8000</td>
+                        </tr>
+                        <tr>
+                           <td>1</td>
+                           <td>Proyekmu siap tampung traffic tinggi didukung fleksibilitas pilihan sistem operasi & isolasi resources 100%.</td>
+                           <td>8000</td>
+                        </tr>
+                        <tr>
+                           <td>1</td>
+                           <td>Proyekmu siap tampung traffic tinggi didukung fleksibilitas pilihan sistem operasi & isolasi resources 100%.</td>
+                           <td>8000</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+         </div>
+
+         <div class="card card-content is-radiusless is-shadowless p-0">
+            <div class="panel is-shadowless" style="border: 1px solid rgb(228, 222, 222);">
+               <p 
+                  class="panel-heading is-size-6 has-text-centered">10 Terbanyak Berdasarkan Analis<br />
+                  <span class="is-size-7 has-text-grey-dark">(Th-2024) 6</span>
+               </p>
+               <div class="panel-block">
+                  <table class="table is-striped is-narrow is-hoverable is-fullwidth">
+                     <thead>
+                        <tr>
+                           <th>No.</th>
+                           <th>Nama Analis</th>
+                           <th>Jumlah</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>1</td>
+                           <td>Proyekmu siap tampung traffic tinggi didukung fleksibilitas pilihan sistem operasi & isolasi resources 100%.</td>
+                           <td>8000</td>
+                        </tr>
+                        <tr>
+                           <td>2</td>
+                           <td>Proyekmu siap tampung traffic tinggi didukung fleksibilitas pilihan sistem operasi & isolasi resources 100%.</td>
+                           <td>8000</td>
+                        </tr>
+                        <tr>
+                           <td>3</td>
+                           <td>Proyekmu siap tampung traffic tinggi didukung fleksibilitas pilihan sistem operasi & isolasi resources 100%.</td>
+                           <td>8000</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
          </div>
       </div>
    </div>
@@ -266,7 +479,7 @@ use([
                // type: 'scroll',
                icon: '',
                top: 60,
-               height: 100,
+               // height: 100,
                left: 0,
                textStyle: {
                   fontSize: 10
@@ -547,7 +760,7 @@ use([
             tooltip: {
                trigger: 'item',
                formatter: function(f) {
-                  return `<span class=''>${f.name}</span>: ${f.value}%`;
+                  return `<span class=''>${f.name}</span>: ${f.value}`;
                }
             },
             xAxis: [
@@ -860,3 +1073,120 @@ use([
     width: 150px !important;
  }
  </style>
+
+<style scoped>
+.card-columns {
+   column-count: 1;
+   column-gap: .5rem;
+   padding: 1.5rem;
+}
+
+.card-columns .card {
+   display: inline-block;
+   width: 100%;
+   margin-bottom: .5rem;
+}
+
+.columns-6 {
+   column-count: 6;
+}
+.columns-5 {
+   column-count: 5;
+}
+.columns-4 {
+   column-count: 4;
+}
+.columns-3 {
+   column-count: 3;
+}
+.columns-2 {
+   column-count: 2;
+}
+.columns-1 {
+   column-count: 1;
+}
+
+@media (min-width: 576px) {
+  .columns-6-sm {
+    column-count: 6;
+  }
+  .columns-5-sm {
+    column-count: 5;
+  }
+  .columns-4-sm {
+    column-count: 4;
+  }
+  .columns-3-sm {
+    column-count: 3;
+  }
+  .columns-2-sm {
+    column-count: 2;
+  }
+  .columns-1-sm {
+    column-count: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .columns-6-md {
+    column-count: 6;
+  }
+  .columns-5-md {
+    column-count: 5;
+  }
+  .columns-4-md {
+    column-count: 4;
+  }
+  .columns-3-md {
+    column-count: 3;
+  }
+  .columns-2-md {
+    column-count: 2;
+  }
+  .columns-1-md {
+    column-count: 1;
+  }
+}
+
+@media (min-width: 992px) { 
+  .columns-6-lg {
+    column-count: 6;
+  }
+  .columns-5-lg {
+    column-count: 5;
+  }
+  .columns-4-lg {
+    column-count: 4;
+  }
+  .columns-3-lg {
+    column-count: 3;
+  }
+  .columns-2-lg {
+    column-count: 2;
+  }
+  .columns-1-lg {
+    column-count: 1;
+  }
+}
+
+@media (min-width: 1200px) { 
+  .columns-6-xl {
+    column-count: 6;
+  }
+  .columns-5-xl {
+    column-count: 5;
+  }
+  .columns-4-xl {
+    column-count: 4;
+  }
+  .columns-3-xl {
+    column-count: 3;
+  }
+  .columns-2-xl {
+    column-count: 2;
+  }
+  .columns-1-xl {
+    column-count: 1;
+  }
+}
+</style>
